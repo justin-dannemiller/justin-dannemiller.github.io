@@ -2,18 +2,24 @@
 import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Justin Dannemiller</h1>
-		<p>AI Engineer — multi-agent LLM systems, RAG, tool-calling, evaluation.</p>
-		<p><a href="/projects/">Projects</a></p>
-		<p><a href="/Resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a></p>
-	</body>
-</html>
+<main>
+  <div class="nav">
+    <a href="/">Justin Dannemiller</a>
+    <div class="navlinks">
+      <a class="pill" href="/projects/">Projects</a>
+      <a class="pill" href="/Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <a class="pill" href="https://github.com/justin-dannemiller" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="pill" href="https://www.linkedin.com/in/justin-dannemiller/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+
+  <section class="card">
+    <h1>Justin Dannemiller</h1>
+    <p>
+      AI Engineer building multi-agent LLM systems, retrieval (RAG), tool-calling, and evaluation infrastructure.
+    </p>
+    <p class="small">
+      This site is under construction - next up: project pages with screenshots and short demos.
+    </p>
+  </section>
+</main>
