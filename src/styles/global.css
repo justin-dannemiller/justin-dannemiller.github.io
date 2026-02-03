@@ -36,7 +36,6 @@ body{
   color:var(--text);
   line-height:1.65;
 
-  /* same structure — warmer, more visible */
   background:
     radial-gradient(1200px 600px at 20% -10%, rgba(180,83,9,.12), transparent 60%),
     linear-gradient(180deg, var(--bg0), var(--bg1));
@@ -61,7 +60,6 @@ h1{
 p{
   margin:12px 0;
   color:var(--muted);
-  max-width:72ch;
 }
 
 /* pill bar */
@@ -120,7 +118,7 @@ p{
   background: rgba(37,99,235,.18);
 }
 
-/* hero card */
+
 .card{
   border:1px solid var(--line);
   background: linear-gradient(180deg, var(--panel0), var(--panel1));
@@ -141,6 +139,15 @@ p{
     );
   margin:16px 0;
 }
+
+
+.card > p,
+.card > .tagrow,
+.card > .rule,
+.card > .prose{
+  width:100%;
+}
+
 
 .tagrow{
   display:flex;
@@ -163,3 +170,17 @@ p{
   font-size:14px;
   color:var(--muted);
 }
+
+
+.prose{
+  margin-top: 6px;
+  max-width: 100%; 
+}
+
+.prose p{
+  max-width: 104ch;
+}
+
+
+h2{ margin:0 0 8px; letter-spacing:-.3px; }
+.card{ margin-top:18px; }
