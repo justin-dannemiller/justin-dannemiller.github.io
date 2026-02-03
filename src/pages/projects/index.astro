@@ -9,11 +9,156 @@ import "../../styles/global.css";
     <link rel="stylesheet" href="/src/styles/global.css" />
     <title>Projects</title>
   </head>
+
   <body>
     <main>
-      <h1>Projects</h1>
-      <p>Under development...</p>
-      <p><a href="/">Back home</a></p>
+      {/* top pill nav (matches homepage style) */}
+      <div class="nav">
+        <a class="brand" href="/">Justin Dannemiller</a>
+        <div class="navlinks">
+          <a class="pill primary" href="/projects/">Projects</a>
+          <a class="pill" href="/JustinDannemiller_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a class="pill" href="https://github.com/justin-dannemiller" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/justin-dannemiller/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      {/* header card */}
+      <section class="card">
+        <h1>Projects</h1>
+        <p>
+          A few representative projects across production agentic systems, robotics, and applied ML.
+        </p>
+
+        <div class="rule"></div>
+
+        <div class="tagrow">
+          <span class="tag">Agentic systems</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Tool-calling</span>
+          <span class="tag">Evaluation</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">Multimodal</span>
+        </div>
+      </section>
+
+      {/* =========================
+          1) OATI Genie - Mulit-agent System
+         ========================= */}
+      <section class="card" style="margin-top:18px;">
+        <h2 style="margin:0 0 8px;">Multi-Agent LLM Platform for Grid Operations (OATI → CAISO)</h2>
+        <p class="small" style="margin-top:0;">
+          Production multi-agent system used to support real-time grid operations workflows, combining retrieval, tool-calling, and evaluation infrastructure.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">Multi-agent</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Hybrid retrieval</span>
+          <span class="tag">Vector DB</span>
+          <span class="tag">Tool-calling</span>
+          <span class="tag">Eval + observability</span>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="prose">
+          <p>
+            I helped evolve an early generative-AI prototype into a production multi-agent platform supporting California ISO.
+            The system spans retrieval over hundreds of product documents, tool-calling workflows across internal APIs and data sources,
+            and evaluation/observability tooling to make model behavior measurable and improvable over time.
+          </p>
+
+          <p>
+            My contributions focused on building reliable agent behavior (structured outputs, tool selection, and failure handling),
+            strengthening retrieval quality, and adding evaluation harnesses that track tool-call correctness and end-to-end task success.
+          </p>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="prose">
+          <p>
+            Adding link to demo soon...
+          </p>
+        </div>
+
+      </section>
+
+      {/* =========================
+          2) AI-Assisted Telerobotics
+         ========================= */}
+      <section class="card" style="margin-top:18px;">
+        <h2 style="margin:0 0 8px;">Telepresence Humanoid Robot (Search &amp; Rescue)</h2>
+        <p class="small" style="margin-top:0;">
+          Led a 13-person student team building a ROS-based telepresence humanoid robot with perception + autonomy for constrained teleoperation.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">ROS</span>
+          <span class="tag">Teleoperation</span>
+          <span class="tag">Perception</span>
+          <span class="tag">Multi-threading</span>
+          <span class="tag">Distributed systems</span>
+          <span class="tag">Search &amp; rescue</span>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="prose">
+          <p>
+            I led development across UI, hardware integration, and teleoperation software, coordinating work via Git and an agile workflow.
+            To improve responsiveness, I implemented multi-threaded Dynamixel motor read/write loops and reduced motor response latency significantly.
+            I also built a ROS-based teleoperation system with distributed processes that enabled remote control of the robot’s torso and head
+            using a puppet controller and AR headset.
+          </p>
+        </div>
+
+        <div class="rule"></div>
+
+        {/* Media links (photos/videos) */}
+        <div class="prose">
+          <p>
+            Images and Video demos being added soon...
+          </p>
+        </div>
+      </section>
+
+      {/* =========================
+          3) MATHEMATICAL REASONING
+         ========================= */}
+      <section class="card" style="margin-top:18px;">
+        <h2 style="margin:0 0 8px;">Mathematical Reasoning Fine-Tuning (LLM)</h2>
+        <p class="small" style="margin-top:0;">
+          Fine-tuned instruction models for improved multi-step mathematical reasoning; focused on evaluation and reliability.
+        </p>
+
+        <div class="tagrow">
+          <span class="tag">LLMs</span>
+          <span class="tag">Fine-tuning</span>
+          <span class="tag">LoRA / PEFT</span>
+          <span class="tag">Eval harness</span>
+          <span class="tag">Data curation</span>
+        </div>
+
+        <div class="rule"></div>
+
+        <div class="prose">
+          <p>
+            Additional details coming soon...
+          </p>
+        </div>
+
+        <div class="rule"></div>
+      </section>
+
+
+      {/* footer */}
+      <section class="card" style="margin-top:18px;">
+        <p style="margin:0;">
+          <a class="pill" href="/">← Back home</a>
+        </p>
+      </section>
     </main>
   </body>
 </html>
